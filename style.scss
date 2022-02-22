@@ -1,2 +1,6 @@
 @import 'reset';
 @import 'mixins';
+
+body {
+   background-color: $color-bg;
+}
