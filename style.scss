@@ -4,3 +4,148 @@
 body {
    background-color: $color-bg;
 }
+
+.box {
+   max-width: 600px;
+   background-color: $color-box;
+   padding: 10px 50px;
+   border-radius: 5px;
+   box-shadow: 3px 3px 3px 0px rgba(0,0,0,.2);
+   margin: 120px auto 0px auto;
+   .title {
+      max-width: fit-content;
+      color: $color-text;
+      margin: 0px auto 10px auto;
+      @include font(title);
+   }
+   .theme {
+      max-width: fit-content;
+      color: $color-text;
+      margin: 0px auto 20px auto;
+      @include font(text);
+      select {
+         border: 1px solid $color-text;
+         border-radius: 5px;
+         cursor: pointer;
+         @include font(text);
+      }
+   }
+   .input-field {
+      display: grid;
+      grid-template-columns: 1fr 60px;
+      gap: 10px;
+      margin: 0px auto 20px auto;
+      input {
+         padding: 10px;
+         border: 2px solid $color-border;
+         border-radius: 5px;
+         @include font(text);
+      }
+      .input-btn {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 60px;
+         background-color: transparent;
+         border: 2px solid $color-border;
+         border-radius: 5px;
+         cursor: pointer;
+         span {
+            &::before {
+               content: '';
+               display: block;
+               width: 18px;
+               height: 3px;
+               background-color: $color-btns;
+               border-radius: 5px;
+               transition: .3s;
+               position: relative;
+               bottom: -3px;
+            }
+            &::after {
+               content: '';
+               display: block;
+               width: 18px;
+               height: 3px;
+               background-color: $color-btns;
+               border-radius: 5px;
+               transition: .3s;
+               transform: rotate(90deg);
+            }
+         }
+         &:hover {
+            background-color: #eee;
+            span::before {
+               transform: scale(1.2);
+            }
+            span::after {
+               transform: scale(1.2) rotate(90deg);
+            }
+         }
+      }
+   }
+   .list {
+      .list-item {
+         display: grid;
+         grid-template-columns: 2px 17px 1fr 25px;
+         align-items: center;
+         gap: 5px;
+         padding: 6px;
+         border: 2px solid $color-border;
+         border-radius: 5px;
+         @include font(list);
+         .list-item-detail {
+            grid-column: 1;
+            &::before {
+               content: '';
+               display: block;
+               width: 2px;
+               height: 27px;
+               background-color: $color-btns;
+            }
+         }
+         .list-item-checkbox {
+            grid-column: 2;
+            display: block;
+            width: 17px;
+            height: 17px;
+            background-color: transparent;
+            border: 2px solid $color-btns;
+            border-radius: 5px;
+         }
+         .list-item-text {
+            grid-column: 3;
+            margin-left: 5px;
+         }
+         .list-item-delete {
+            display: block;
+            background-color: transparent;
+            padding: 10px;
+            &::before, &::after {
+               content: '';
+               display: block;
+               width: 2px;
+               height: 15px;
+               background-color: $color-delete;
+               border-radius: 5px;
+               transform: rotate(45deg);
+               position: relative;
+               bottom: -10px;
+               left: 0px;
+            }
+            &::after {
+               transform: rotate(315deg);
+               top: -5px;
+               left: 0px;
+            }
+            &:hover {
+               background-color: #FFE8E8;
+            }
+         }
+      }
+   }
+}
+
+.box .list .list-item:first-child {
+   display: none;
+}

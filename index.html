@@ -12,16 +12,38 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet" />
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
 
    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="theme-ocean">
+<body>
    
-   <div>
+   <section class="box">
+      <h1 class="title">ToDo List</h1>
+      <div class="theme">
+         <label for="theme">Theme:</label>
+         <select name="theme" id="theme">
+            <option value="standard" selected>Standard</option>
+            <option value="ocean">Ocean</option>
+         </select>
+      </div>
 
-   </div>
+      <div class="input-field">
+         <input type="text" name="inputField" id="inputField" />
+         <button type="button" class="input-btn">
+            <span></span>
+         </button>
+      </div>
+
+      <div class="list">
+         <div class="list-item">
+            <span class="list-item-detail"></span>
+            <button type="button" class="list-item-checkbox"></button>
+            <p class="list-item-text" contenteditable="true" spellcheck="false">Do the ToDo List today without exitation!Do the ToDo List today without exitation!</p>
+            <button type="button" class="list-item-delete"></button>
+         </div>
+      </div>
+   </section>
 
    <script src="script.js"></script>
 </body>
