@@ -29,18 +29,18 @@
       </div>
 
       <div class="input-field">
-         <input type="text" name="inputField" id="inputField" />
-         <button type="button" class="input-btn">
+         <input type="text" name="inputField" id="inputField" data-todo="field" />
+         <button type="button" class="input-btn" data-todo="add">
             <span></span>
          </button>
       </div>
 
-      <div class="list">
-         <div class="list-item">
+      <div class="list" data-todo="list">
+         <div class="list-item" data-todo="listItem">
             <span class="list-item-detail"></span>
-            <button type="button" class="list-item-checkbox"></button>
+            <button type="button" class="list-item-checkbox" data-todo="checkbox"></button>
             <p class="list-item-text" contenteditable="true" spellcheck="false">Do the ToDo List today without exitation!Do the ToDo List today without exitation!</p>
-            <button type="button" class="list-item-delete"></button>
+            <button type="button" class="list-item-delete" data-todo="delete"></button>
          </div>
       </div>
    </section>

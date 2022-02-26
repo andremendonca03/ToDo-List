@@ -11,7 +11,7 @@ body {
    padding: 10px 50px;
    border-radius: 5px;
    box-shadow: 3px 3px 3px 0px rgba(0,0,0,.2);
-   margin: 120px auto 0px auto;
+   margin: 120px auto 120px auto;
    .title {
       max-width: fit-content;
       color: $color-text;
@@ -75,12 +75,6 @@ body {
          }
          &:hover {
             background-color: #eee;
-            span::before {
-               transform: scale(1.2);
-            }
-            span::after {
-               transform: scale(1.2) rotate(90deg);
-            }
          }
       }
    }
@@ -93,6 +87,7 @@ body {
          padding: 6px;
          border: 2px solid $color-border;
          border-radius: 5px;
+         margin-bottom: 10px;
          @include font(list);
          .list-item-detail {
             grid-column: 1;
@@ -120,7 +115,9 @@ body {
          .list-item-delete {
             display: block;
             background-color: transparent;
-            padding: 10px;
+            padding: 0px 10px;
+            position: relative;
+            top: -2px;
             &::before, &::after {
                content: '';
                display: block;
@@ -142,10 +139,35 @@ body {
                background-color: #FFE8E8;
             }
          }
+         &.checked {
+            animation: slideRight .3s forwards;
+            .list-item-checkbox {
+               width: 15px;
+               height: 15px;
+               background-color: $color-btns;
+               border: 2px solid $color-box;
+               box-shadow: 0px 0px 0px 2px $color-btns;
+            }
+            .list-item-text {
+               text-decoration: solid line-through;
+               color: #bbb;
+            }
+         }
       }
    }
 }
 
 .box .list .list-item:first-child {
    display: none;
+}
+
+@keyframes slideRight {
+   0% {
+      opacity: 1;
+      transform: translateX(0px);
+   }
+   100% {
+      opacity: 0;
+      transform: translateX(30px);
+   }
 }
