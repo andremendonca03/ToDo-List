@@ -140,7 +140,6 @@ body {
             }
          }
          &.checked {
-            animation: slideRight .3s forwards;
             .list-item-checkbox {
                width: 15px;
                height: 15px;
@@ -159,15 +158,4 @@ body {
 
 .box .list .list-item:first-child {
    display: none;
-}
-
-@keyframes slideRight {
-   0% {
-      opacity: 1;
-      transform: translateX(0px);
-   }
-   100% {
-      opacity: 0;
-      transform: translateX(30px);
-   }
 }

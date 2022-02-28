@@ -276,11 +276,6 @@ body {
   background-color: #FFE8E8;
 }
 
-.box .list .list-item.checked {
-  -webkit-animation: slideRight .3s forwards;
-          animation: slideRight .3s forwards;
-}
-
 .box .list .list-item.checked .list-item-checkbox {
   width: 15px;
   height: 15px;
@@ -298,30 +293,4 @@ body {
 
 .box .list .list-item:first-child {
   display: none;
-}
-
-@-webkit-keyframes slideRight {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-}
-
-@keyframes slideRight {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
 }
