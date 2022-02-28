@@ -36,6 +36,23 @@ if (field) {
    }
 
    addBtn.addEventListener('click', handleAddItem);
+
+   //THEME SELECTOR
+   function changeTheme() {
+      const themeSelector = document.querySelector('[data-theme="selector"]');
+
+      themeSelector.addEventListener('change', () => {
+         const html = document.documentElement;
+
+         if (themeSelector.value !== 'standard') {
+            html.setAttribute('class', `js theme-${themeSelector.value}`);
+         } else {
+            html.setAttribute('class', `js`);
+         }
+      });
+   }
+   changeTheme();
+
 } else {
    window.location.reload();
 }
