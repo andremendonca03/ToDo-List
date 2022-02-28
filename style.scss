@@ -11,7 +11,7 @@ body {
    padding: 10px 50px;
    border-radius: 5px;
    box-shadow: 3px 3px 3px 0px rgba(0,0,0,.2);
-   margin: 120px auto 120px auto;
+   margin: 120px auto;
    .title {
       max-width: fit-content;
       color: $color-text;
@@ -74,7 +74,7 @@ body {
             }
          }
          &:hover {
-            background-color: #eee;
+            background-color: $color-hover;
          }
       }
    }
@@ -136,7 +136,7 @@ body {
                left: 0px;
             }
             &:hover {
-               background-color: #FFE8E8;
+               background-color: $color-delete-hover;
             }
          }
          &.checked {
@@ -158,4 +158,247 @@ body {
 
 .box .list .list-item:first-child {
    display: none;
+}
+
+@media only screen and (max-width: 620px) {
+   .box {
+      padding: 10px;
+      margin: 60px 10px;
+   }
+}
+
+/*==============
+   OCEAN THEME
+==============*/
+
+.theme-ocean body {
+   background-color: $color-ocean-bg;
+   .box {
+      background-color: $color-ocean-box;
+      .title {
+         color: $color-ocean-text;
+      }
+      .theme {
+         color: $color-ocean-text;
+         select {
+            background-color: transparent;
+            border: 1px solid $color-ocean-text;
+         }
+      }
+      .input-field {
+         input {
+            background-color: transparent;
+            border: 2px solid $color-ocean-border;
+         }
+         .input-btn {
+            border: 2px solid $color-ocean-border;
+            span {
+               &::before,
+               &::after {
+                  background-color: $color-ocean-btns;
+               }
+            }
+            &:hover {
+               background-color: $color-ocean-hover;
+            }
+         }
+      }
+      .list {
+         .list-item {
+            border: 2px solid $color-ocean-border;
+            .list-item-detail {
+               &::before {
+                  background-color: $color-ocean-btns;
+               }
+            }
+            .list-item-checkbox {
+               border: 2px solid $color-ocean-btns;
+            }
+            &.checked {
+               .list-item-checkbox {
+                  background-color: $color-ocean-btns;
+                  border: 2px solid $color-ocean-box;
+                  box-shadow: 0px 0px 0px 2px $color-ocean-btns;
+               }
+            }
+         }
+      }
+   }
+}
+
+/*==============
+   FOREST THEME
+==============*/
+
+.theme-forest body {
+   background-color: $color-forest-bg;
+   .box {
+      background-color: $color-forest-box;
+      .title {
+         color: $color-forest-text;
+      }
+      .theme {
+         color: $color-forest-text;
+         select {
+            background-color: transparent;
+            border: 1px solid $color-forest-text;
+         }
+      }
+      .input-field {
+         input {
+            background-color: transparent;
+            border: 2px solid $color-forest-border;
+         }
+         .input-btn {
+            border: 2px solid $color-forest-border;
+            span {
+               &::before,
+               &::after {
+                  background-color: $color-forest-btns;
+               }
+            }
+            &:hover {
+               background-color: $color-forest-hover;
+            }
+         }
+      }
+      .list {
+         .list-item {
+            border: 2px solid $color-forest-border;
+            .list-item-detail {
+               &::before {
+                  background-color: $color-forest-btns;
+               }
+            }
+            .list-item-checkbox {
+               border: 2px solid $color-forest-btns;
+            }
+            &.checked {
+               .list-item-checkbox {
+                  background-color: $color-forest-btns;
+                  border: 2px solid $color-forest-box;
+                  box-shadow: 0px 0px 0px 2px $color-forest-btns;
+               }
+            }
+         }
+      }
+   }
+}
+
+/*==============
+   GYM THEME
+==============*/
+
+.theme-gym body {
+   background-color: $color-gym-bg;
+   .box {
+      background-color: $color-gym-box;
+      .title {
+         color: $color-gym-text;
+      }
+      .theme {
+         color: $color-gym-text;
+         select {
+            background-color: transparent;
+            border: 1px solid $color-gym-text;
+         }
+      }
+      .input-field {
+         input {
+            background-color: transparent;
+            border: 2px solid $color-gym-border;
+         }
+         .input-btn {
+            border: 2px solid $color-gym-border;
+            span {
+               &::before,
+               &::after {
+                  background-color: $color-gym-btns;
+               }
+            }
+            &:hover {
+               background-color: $color-gym-hover;
+            }
+         }
+      }
+      .list {
+         .list-item {
+            border: 2px solid $color-gym-border;
+            .list-item-detail {
+               &::before {
+                  background-color: $color-gym-btns;
+               }
+            }
+            .list-item-checkbox {
+               border: 2px solid $color-gym-btns;
+            }
+            &.checked {
+               .list-item-checkbox {
+                  background-color: $color-gym-btns;
+                  border: 2px solid $color-gym-box;
+                  box-shadow: 0px 0px 0px 2px $color-gym-btns;
+               }
+            }
+         }
+      }
+   }
+}
+
+/*==============
+   MAGIC THEME
+==============*/
+
+.theme-magic body {
+   background-color: $color-magic-bg;
+   .box {
+      background-color: $color-magic-box;
+      .title {
+         color: $color-magic-text;
+      }
+      .theme {
+         color: $color-magic-text;
+         select {
+            background-color: transparent;
+            border: 1px solid $color-magic-text;
+         }
+      }
+      .input-field {
+         input {
+            background-color: transparent;
+            border: 2px solid $color-magic-border;
+         }
+         .input-btn {
+            border: 2px solid $color-magic-border;
+            span {
+               &::before,
+               &::after {
+                  background-color: $color-magic-btns;
+               }
+            }
+            &:hover {
+               background-color: $color-magic-hover;
+            }
+         }
+      }
+      .list {
+         .list-item {
+            border: 2px solid $color-magic-border;
+            .list-item-detail {
+               &::before {
+                  background-color: $color-magic-btns;
+               }
+            }
+            .list-item-checkbox {
+               border: 2px solid $color-magic-btns;
+            }
+            &.checked {
+               .list-item-checkbox {
+                  background-color: $color-magic-btns;
+                  border: 2px solid $color-magic-box;
+                  box-shadow: 0px 0px 0px 2px $color-magic-btns;
+               }
+            }
+         }
+      }
+   }
 }

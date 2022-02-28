@@ -61,6 +61,9 @@ img {
 ==============*/
 /*STANDARD THEME*/
 /*OCEAN THEME*/
+/*FOREST THEME*/
+/*GYM THEME*/
+/*MAGIC THEME*/
 /*SPECIAL COLORS*/
 /*==============
    TIPOGRAFIA
@@ -76,7 +79,7 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
-  margin: 120px auto 120px auto;
+  margin: 120px auto;
 }
 
 .box .title {
@@ -188,7 +191,7 @@ body {
 }
 
 .box .input-field .input-btn:hover {
-  background-color: #eee;
+  background-color: #EEE;
 }
 
 .box .list .list-item {
@@ -293,4 +296,251 @@ body {
 
 .box .list .list-item:first-child {
   display: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .box {
+    padding: 10px;
+    margin: 60px 10px;
+  }
+}
+
+/*==============
+   OCEAN THEME
+==============*/
+.theme-ocean body {
+  background-color: #08254d;
+}
+
+.theme-ocean body .box {
+  background-color: #E4FBFF;
+}
+
+.theme-ocean body .box .title {
+  color: #00121B;
+}
+
+.theme-ocean body .box .theme {
+  color: #00121B;
+}
+
+.theme-ocean body .box .theme select {
+  background-color: transparent;
+  border: 1px solid #00121B;
+}
+
+.theme-ocean body .box .input-field input {
+  background-color: transparent;
+  border: 2px solid #00B4D8;
+}
+
+.theme-ocean body .box .input-field .input-btn {
+  border: 2px solid #00B4D8;
+}
+
+.theme-ocean body .box .input-field .input-btn span::before, .theme-ocean body .box .input-field .input-btn span::after {
+  background-color: #eaba6b;
+}
+
+.theme-ocean body .box .input-field .input-btn:hover {
+  background-color: #E4FBFF;
+}
+
+.theme-ocean body .box .list .list-item {
+  border: 2px solid #00B4D8;
+}
+
+.theme-ocean body .box .list .list-item .list-item-detail::before {
+  background-color: #eaba6b;
+}
+
+.theme-ocean body .box .list .list-item .list-item-checkbox {
+  border: 2px solid #eaba6b;
+}
+
+.theme-ocean body .box .list .list-item.checked .list-item-checkbox {
+  background-color: #eaba6b;
+  border: 2px solid #E4FBFF;
+  -webkit-box-shadow: 0px 0px 0px 2px #eaba6b;
+          box-shadow: 0px 0px 0px 2px #eaba6b;
+}
+
+/*==============
+   FOREST THEME
+==============*/
+.theme-forest body {
+  background-color: #1e2f23;
+}
+
+.theme-forest body .box {
+  background-color: #96a86d;
+}
+
+.theme-forest body .box .title {
+  color: #143300;
+}
+
+.theme-forest body .box .theme {
+  color: #143300;
+}
+
+.theme-forest body .box .theme select {
+  background-color: transparent;
+  border: 1px solid #143300;
+}
+
+.theme-forest body .box .input-field input {
+  background-color: transparent;
+  border: 2px solid #34623F;
+}
+
+.theme-forest body .box .input-field .input-btn {
+  border: 2px solid #34623F;
+}
+
+.theme-forest body .box .input-field .input-btn span::before, .theme-forest body .box .input-field .input-btn span::after {
+  background-color: #7f4f24;
+}
+
+.theme-forest body .box .input-field .input-btn:hover {
+  background-color: #9eb173;
+}
+
+.theme-forest body .box .list .list-item {
+  border: 2px solid #34623F;
+}
+
+.theme-forest body .box .list .list-item .list-item-detail::before {
+  background-color: #7f4f24;
+}
+
+.theme-forest body .box .list .list-item .list-item-checkbox {
+  border: 2px solid #7f4f24;
+}
+
+.theme-forest body .box .list .list-item.checked .list-item-checkbox {
+  background-color: #7f4f24;
+  border: 2px solid #96a86d;
+  -webkit-box-shadow: 0px 0px 0px 2px #7f4f24;
+          box-shadow: 0px 0px 0px 2px #7f4f24;
+}
+
+/*==============
+   GYM THEME
+==============*/
+.theme-gym body {
+  background-color: #2B2D42;
+}
+
+.theme-gym body .box {
+  background-color: #EDF2F4;
+}
+
+.theme-gym body .box .title {
+  color: #1d1e30;
+}
+
+.theme-gym body .box .theme {
+  color: #1d1e30;
+}
+
+.theme-gym body .box .theme select {
+  background-color: transparent;
+  border: 1px solid #1d1e30;
+}
+
+.theme-gym body .box .input-field input {
+  background-color: transparent;
+  border: 2px solid #EF233C;
+}
+
+.theme-gym body .box .input-field .input-btn {
+  border: 2px solid #EF233C;
+}
+
+.theme-gym body .box .input-field .input-btn span::before, .theme-gym body .box .input-field .input-btn span::after {
+  background-color: #8D99AE;
+}
+
+.theme-gym body .box .input-field .input-btn:hover {
+  background-color: #f7fafc;
+}
+
+.theme-gym body .box .list .list-item {
+  border: 2px solid #EF233C;
+}
+
+.theme-gym body .box .list .list-item .list-item-detail::before {
+  background-color: #8D99AE;
+}
+
+.theme-gym body .box .list .list-item .list-item-checkbox {
+  border: 2px solid #8D99AE;
+}
+
+.theme-gym body .box .list .list-item.checked .list-item-checkbox {
+  background-color: #8D99AE;
+  border: 2px solid #EDF2F4;
+  -webkit-box-shadow: 0px 0px 0px 2px #8D99AE;
+          box-shadow: 0px 0px 0px 2px #8D99AE;
+}
+
+/*==============
+   MAGIC THEME
+==============*/
+.theme-magic body {
+  background-color: #7B2CBF;
+}
+
+.theme-magic body .box {
+  background-color: #9D8DF1;
+}
+
+.theme-magic body .box .title {
+  color: #1F1300;
+}
+
+.theme-magic body .box .theme {
+  color: #1F1300;
+}
+
+.theme-magic body .box .theme select {
+  background-color: transparent;
+  border: 1px solid #1F1300;
+}
+
+.theme-magic body .box .input-field input {
+  background-color: transparent;
+  border: 2px solid #5535D4;
+}
+
+.theme-magic body .box .input-field .input-btn {
+  border: 2px solid #5535D4;
+}
+
+.theme-magic body .box .input-field .input-btn span::before, .theme-magic body .box .input-field .input-btn span::after {
+  background-color: #826ECB;
+}
+
+.theme-magic body .box .input-field .input-btn:hover {
+  background-color: #a899f5;
+}
+
+.theme-magic body .box .list .list-item {
+  border: 2px solid #5535D4;
+}
+
+.theme-magic body .box .list .list-item .list-item-detail::before {
+  background-color: #826ECB;
+}
+
+.theme-magic body .box .list .list-item .list-item-checkbox {
+  border: 2px solid #826ECB;
+}
+
+.theme-magic body .box .list .list-item.checked .list-item-checkbox {
+  background-color: #826ECB;
+  border: 2px solid #9D8DF1;
+  -webkit-box-shadow: 0px 0px 0px 2px #826ECB;
+          box-shadow: 0px 0px 0px 2px #826ECB;
 }
